@@ -1,0 +1,92 @@
+<html>
+<head>
+<style>
+body{
+   background:lightblue;
+}
+
+input[type=text], input[type=password] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid black;
+    box-sizing: border-box;
+    box-shadow:10px 8px 10px red;
+    border-radius:10px;
+    -webkit-transition:5s;
+    transition:5s;
+}
+ input[type=text]:focus
+{
+  border:2px solid blue;
+  border-radius:20px;
+ box-sizing: border-box;
+}
+input[type=password]:focus
+{
+  border:2px solid blue;
+   border-radius:20px;
+   box-sizing: border-box;
+}  
+header:hover
+{
+  background:darkgrey;
+  color:white;
+}
+
+div {
+  width: 100%;
+  background-color:grey;
+  overflow:auto;
+  border-radius:5px;
+
+  
+
+}
+
+div a {  
+  float: left;
+  padding: 12px;
+  color: white;
+  font-size: 17px;
+  text-decoration:none;
+  border:2px solid black;
+  margin:2px 0px;
+  border-radius:5px;
+}
+div a:focus
+{
+  border:2px solid white;
+  color:black;
+}
+
+
+</style>
+</head>
+<body>
+<header>
+<div >
+  <a href="#"> Home</a> 
+  <a href="#"> Search</a> 
+  <a href="#"> Contact</a> 
+  <a href="#"> About</a>
+</div>
+</header>
+<center>
+<form action="welcome_get.php" method="get">
+<h1>Login</h1><br>
+Firstname:<br>
+<input type="text" name="fname" value="" placeholder="firstname...." reqiured><br>
+Lastname:<br>
+<input type="text" name="lname" value="" placeholder="lastname...." reqiured>
+<br>
+Password:<br>
+<input type="password" name="pwd" value="" placeholder="##########" required>
+<br><br>
+<input type="submit" value="login">
+<input type="checkbox" checked="checked">Remember me<br><br>
+<a href="pwd.html" >change password?</a>
+</form>
+</center>
+</html>

@@ -1,0 +1,68 @@
+<html>
+<head>
+<style>
+body{
+   background:blue;
+}
+input[type=password] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid black;
+    box-sizing: border-box;
+    box-shadow:10px 8px 10px black;
+    border-radius:10px;
+    -webkit-transition:5s;
+    transition:5s;
+}
+ 
+input[type=password]:focus
+{
+  border:2px solid blue;
+} 
+div a {    
+   width:100%;
+  float: left;
+  padding: 12px;
+  color: white;
+  font-size: 17px;
+  text-decoration:none;
+  border:2px solid black;
+  margin:2px 0px;
+  border-radius:5px;
+}
+div a:focus
+{
+  border:2px solid white;
+  color:black;
+  
+} 
+
+
+
+</style>
+</head>
+<body>
+<header>
+<div >
+  <a href="#"> Home</a> 
+  <a href="#"> Search</a> 
+  <a href="#"> Contact</a> 
+  <a href="#"> About</a>
+</div>
+</header>
+<center>
+
+<form action="pwd.html" method="post">
+<h1>Change password</h1>
+Old password:<br><br>
+<input type="password" name="pwd1" placeholder="old password..." required><br><br>
+New password:<br><br>
+<input type="password" name="pwd2" placeholder="new password..." required><br><br>
+Confirmed password:<br><br>
+<input type="password" name="pwd2" placeholder="repeat password..." required><br><br>
+<input type="submit" value="change password">
+</form>
+</center>
+</html>
